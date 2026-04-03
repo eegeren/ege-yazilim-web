@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { navItems } from "@/lib/data";
@@ -9,17 +10,13 @@ export function SiteFooter() {
     <footer className="border-t border-white/60 bg-white/70 py-10 backdrop-blur">
       <Container className="grid gap-10 lg:grid-cols-[1fr_0.7fr_0.7fr]">
         <div>
-          <div className="flex items-center gap-3">
-            <div className="flex size-10 items-center justify-center rounded-2xl bg-slate-950 text-sm font-semibold text-white">
-              M
-            </div>
-            <div>
-              <div className="text-sm font-semibold tracking-[-0.03em] text-slate-950">
-                MağazaERP
-              </div>
-              <div className="text-xs text-slate-500">Retail ERP / POS</div>
-            </div>
-          </div>
+          <Image
+            src="/ybyazilimlogo.png"
+            alt="YB Yazılım"
+            width={160}
+            height={52}
+            className="h-12 w-auto object-contain"
+          />
           <p className="mt-4 max-w-md text-sm leading-7 text-slate-600">
             Mağaza satış, stok, mal kabul, transfer, kullanıcı ve kasa süreçlerini tek panelde yöneten rol bazlı operasyon platformu.
           </p>
