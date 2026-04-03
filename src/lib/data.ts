@@ -297,7 +297,7 @@ export const setupSteps: SetupStep[] = [
   {
     step: "02",
     title: "Ödeme ve planlama",
-    description: "Abonelik veya kurulum desteği ile başlangıç kapsamını netleştirin.",
+    description: "Abonelik ile başlangıç kapsamını netleştirin. Ücretsiz kurulum desteği her planda dahildir.",
   },
   {
     step: "03",
@@ -376,7 +376,7 @@ export const faqItems: FAQItem[] = [
   {
     question: "Kurulum desteği veriyor musunuz?",
     answer:
-      "Evet. Ürün ve kategori aktarımı, kullanıcı rollerinin ilk yapılandırması, mağaza süreçlerine göre sistem uyarlaması ve ekip eğitimini kapsayan kurulum desteği paketi sunulmaktadır.",
+      "Evet. Ürün ve kategori aktarımı, kullanıcı rollerinin ilk yapılandırması, mağaza süreçlerine göre sistem uyarlaması ve ekip eğitimini kapsayan ücretsiz kurulum desteği her planda sunulmaktadır.",
   },
   {
     question: "Demo hesabı var mı?",

@@ -6,7 +6,7 @@ import { PricingPageContent } from "@/components/pricing-page-content";
 
 export const metadata: Metadata = {
   title: "Fiyatlandırma",
-  description: "MağazaERP fiyat planlarını ve kurulum desteği kapsamını inceleyin.",
+  description: "MağazaERP fiyat planlarını inceleyin. Tüm planlarda ücretsiz kurulum desteği dahildir.",
 };
 
 export default function PricingPage() {

@@ -21,7 +21,7 @@ export function PricingSection({ compact = false }: PricingSectionProps) {
           <SectionHeading
             eyebrow="Fiyatlandırma"
             title="Abonelik ve kurulum seçeneklerini net biçimde karşılaştırın"
-            description="Aylık veya yıllık kullanım seçeneklerine ek olarak, ilk geçiş süreci için kurulum desteği planı sunabilirsiniz."
+            description="Aylık veya yıllık kullanım seçeneklerinin tamamına ücretsiz kurulum desteği dahildir."
             align={compact ? "left" : "center"}
           />
         </AnimatedSection>

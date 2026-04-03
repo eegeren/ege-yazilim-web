@@ -13,7 +13,7 @@ export function ContactPageContent() {
             <SectionHeading
               eyebrow="İletişim"
               title="Kurulum, demo ve teklif süreci için bizimle iletişime geçin"
-              description="İşletmenizin yapısına göre demo planı, kurulum desteği ve uygun paket seçimi konusunda statik iletişim formu üzerinden talep toplayın."
+              description="İşletmenizin yapısına göre demo planı, ücretsiz kurulum desteği ve uygun paket seçimi konusunda aşağıdaki formu doldurun."
             />
 
             <div className="mt-8 space-y-4">
