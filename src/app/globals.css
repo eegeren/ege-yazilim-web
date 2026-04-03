@@ -1,0 +1,106 @@
+@import "tailwindcss";
+
+:root {
+  --color-surface: #f4f7fb;
+  --color-surface-strong: #ffffff;
+  --color-panel: #eef4ff;
+  --color-panel-strong: #d9e8ff;
+  --color-ink: #0b1324;
+  --color-ink-soft: #526077;
+  --color-line: rgba(148, 163, 184, 0.24);
+  --color-primary: #2563eb;
+  --color-primary-strong: #1d4ed8;
+  --color-primary-soft: rgba(37, 99, 235, 0.12);
+  --color-green: #059669;
+  --color-green-strong: #047857;
+  --color-green-soft: rgba(5, 150, 105, 0.12);
+  --color-success: #0f766e;
+  --shadow-soft: 0 30px 80px rgba(15, 23, 42, 0.08);
+  --shadow-card: 0 20px 54px rgba(15, 23, 42, 0.07);
+  --shadow-card-hover: 0 28px 70px rgba(15, 23, 42, 0.1);
+}
+
+@theme inline {
+  --font-sans: var(--font-manrope);
+  --font-mono: var(--font-plex-mono);
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-ink);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background:
+    radial-gradient(circle at top, rgba(37, 99, 235, 0.11), transparent 34%),
+    radial-gradient(circle at 85% 10%, rgba(14, 165, 233, 0.08), transparent 24%),
+    linear-gradient(180deg, #fbfdff 0%, #f4f7fb 40%, #eef3fb 100%);
+}
+
+body {
+  min-height: 100vh;
+  letter-spacing: -0.01em;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.16);
+  color: var(--color-ink);
+}
+
+a,
+button,
+input,
+textarea {
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    opacity 180ms ease;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.grain-mask {
+  position: relative;
+}
+
+.grain-mask::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.12)),
+    radial-gradient(rgba(255, 255, 255, 0.24) 0.55px, transparent 0.55px);
+  background-size: 100% 100%, 12px 12px;
+  opacity: 0.55;
+  border-radius: inherit;
+}
+
+.surface-card {
+  border: 1px solid rgba(255, 255, 255, 0.76);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.9)),
+    rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow-card);
+}
+
+.surface-card-hover {
+  transition:
+    transform 220ms ease,
+    box-shadow 220ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease;
+}
+
+.surface-card-hover:hover {
+  transform: translateY(-2px);
+  border-color: rgba(191, 219, 254, 0.9);
+  box-shadow: var(--shadow-card-hover);
+}
